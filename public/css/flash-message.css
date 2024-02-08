@@ -1,0 +1,12 @@
+#flash-message {  
+    position:relative;
+   
+    /* things i added below */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    width: 100%;
+    color:white;
+    background-color: #0c433d;
+  }

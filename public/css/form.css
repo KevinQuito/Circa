@@ -1,0 +1,183 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 100;
+  padding: 0 20px;
+}
+.nav {
+  width: 100%;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: #0c433d;
+  background-color: #0c433d;
+}
+.nav,
+.nav_item {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-weight: 900;
+}
+.nav_logo,
+.nav_link{
+    color: #fff;
+}
+.nav_logo {
+  font-size: 25px;
+}
+.nav_item {
+  column-gap: 25px;
+}
+.nav_link:hover {
+  color: #d9d9d9;
+}
+.button {
+  padding: 6px 24px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #0c433d;
+}
+.button:active {
+  transform: scale(0.98);
+}
+
+.home {
+    background-image: url("../images/Circa_Logo.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+  }
+
+.form-center{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 75%;
+  padding: 20px;
+  width: 320px;
+}
+
+.tasks-form{
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 700px;
+  padding: 20px;
+  width: 450px;
+}
+
+.ltes-form{
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 850px;
+  padding: 20px;
+  width: 450px;
+}
+
+textarea{
+  resize: none;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.text {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.sub-text {
+  color: #c5c4dd;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.error-text{
+  color: #ff0000;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}

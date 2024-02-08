@@ -42,4 +42,35 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    // This function below will allow us to filter our User Model
+    public function scopeFilter($query, array $filters){
+        if($filters['id'] ?? false){
+            $query->where('id', 'like', '%' . request('id') . '%');
+        }
+
+        if($filters['name'] ?? false){
+            $query->where('name', 'like', '%' . request('name') . '%');
+        }
+
+        if($filters['email'] ?? false){
+            $query->where('email', 'like', '%' . request('email') . '%');
+        }
+
+        if($filters['search'] ?? false){
+            $query->where('id', 'like', '%' . request('search') . '%')
+            ->orWhere('name', 'like', '%' . request('search') . '%')
+            ->orWhere('email', 'like', '%' . request('search') . '%');
+        }
+    }
+    
+    // Relationship With Tasks
+    public function tasks(){
+        return $this->hasMany(Tasks::class, 'user_id');
+    }
+
+    // Relationship With Lte
+    public function lte(){
+        return $this->hasMany(Lte::class,'user_id');
+    }
 }
