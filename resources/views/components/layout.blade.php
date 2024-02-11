@@ -7,7 +7,7 @@
     
     <!----======== CSS ======== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{absolute_url(asset('css/dashboard.css'))}}" />
+    <link rel="stylesheet" href="{{asset('css/dashboard.css')}}" />
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!----====== Scripts ======= --->
@@ -86,6 +86,6 @@
     {{-- THIS NEEDS TO BE AT THE BOTTOM FOR SOME REASON, OTHERWISE DARKMODE DOESNT WORK,
         script to use alpinejs makes flash message disappear after a couple seconds --}}
     <script src="//unpkg.com/alpinejs" defer></script>
-    <script src="{{absolute_url(asset('js/dashboard.js'))}}"></script>
+    <script src="{{asset('js/dashboard.js')}}"></script>
 </body>
 </html>
