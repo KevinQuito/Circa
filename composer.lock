@@ -3485,7 +3485,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v7.0.0",
+            "version": "v8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -3692,7 +3692,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v7.0.2",
+            "version": "v8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -5230,7 +5230,7 @@
         },
         {
             "name": "symfony/string",
-            "version": "v7.0.2",
+            "version": "v8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
@@ -8228,7 +8228,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.0.0",
+            "version": "v8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
